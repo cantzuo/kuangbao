@@ -1,5 +1,5 @@
 import{connect}from'cloudflare:sockets';
-const d=new TextDecoder(),e=new TextEncoder(),i='5583',u='e28316dc-8571-422b-b0b7-5b7c5f784cee',p=['cf.877774.xyz'],r='sjc.o00o.ooo:443',n=' newedt';
+const d=new TextDecoder(),e=new TextEncoder(),i='5583',u='e28316dc-8571-422b-b0b7-5b7c5f784cee',p=['cf.877774.xyz'],r='wvs.sosorg.nyc.mn:443',n=' newedt';
 const U=((h,a=new Uint8Array(16))=>{for(let i=0;i<32;i+=2)a[i>>1]=parseInt(h.substr(i,2),16);return a})(u.replace(/-/g,''));
 const c=b=>{for(let i=0;i<16;i++)if(b[i]!==U[i])return 0;return 1};
 const t=async(h,o,a)=>{try{const s=await connect({hostname:h,port:o});return await s.opened,{tcpSocket:s,initialData:a}}catch{}if(r){const[H,P]=r.split(':');return t(H,+P||o,a)}throw new Error('连接失败')};
